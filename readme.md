@@ -1,7 +1,7 @@
 # Frontend Mentor
 
 [Frontend Mentor](https://frontendmentor.io)
- é um site onde podemos colocar em prática nossas habilidades em Desenvolvimento Front End além de podermos trocar conhecimentos com pessoas a nível global.
+ é um site onde podemos colocar em prática nossas habilidades em Desenvolvimento Front End além de trocarmos conhecimentos com outros desenvolvedores a nível global.
  <br> <br>
 A plataforma permite que cada projeto seja feito de forma independente e utilizando tecnologias variadas com ou seu frameworks por exemplo, além disso cada projeto pode ser avaliado pelos demais integrantes da plataforma.
  <br> <br>
