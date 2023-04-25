@@ -1,0 +1,120 @@
+/*ESTILOS GERAIS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;      
+}
+
+:root{
+    --cor-p1:hsl(158, 36%, 37%);
+    --cor-p2: hsl(30, 38%, 92%);
+    --cor-s1: hsl(212, 21%, 14%);
+    --cor-s2:hsl(228, 12%, 48%);
+    --cor-s3:hsl(0, 0%, 100%);
+    --color-hover: #1a4031
+}
+/************************/
+body{
+    background-color: var(--cor-p2);
+    display: flex;    
+    justify-content: center;
+}
+
+#container{
+    max-width: 37.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--cor-s3);
+    margin: 12.75rem auto;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#container-img{
+    max-width: 100%;
+    display: block;
+    background: url(./img/image-product-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 10px 0 0 10px;
+}
+
+#container-produto{
+font-size: .7rem;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: .4em;
+color: var(--cor-s2);
+margin-bottom: 1.56rem;
+}
+
+#container-inf{
+    padding: 2rem ;
+    max-width: 18.75rem;
+}
+
+#container-produto-nome{    
+    margin-bottom: 2.19rem;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    line-height: 1em;
+}
+
+#container-txt{
+    font-family:'Montserrat', sans-serif; 
+    color: var(--cor-s2);
+    font-size: .88rem;
+    margin-bottom: 2.38rem;
+}
+
+#container-prices{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+#container-prices span:first-child{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: var(--cor-p1);
+}
+
+#container-prices span:last-child{
+    text-decoration: line-through;
+    color: var(--cor-s2);
+}
+
+#container-btn{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    width: 100%;    
+    padding: 1rem;
+    background-color: var(--cor-p1);
+    border-radius: .5rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-s3);
+    font-weight: 700;
+    transition: .1s ease-in-out;
+}
+
+#container-btn:hover{
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+@media (max-width: 400px){
+    #container{    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;    
+    border-radius: 10px 10px 10px 10px ;
+ }
+    #container-img{
+    border-radius: 10px 10px 0px 0px;
+    height: 15rem;
+    } 
+}
