@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component
+# Frontend Mentor - New Page
 
-![Design preview for Interactive rating component](./assets/img/desktop-preview.jpg)
+![Design preview for New Page](./assets/imgs/desktop-design.jpg)
 
 ## Welcome! 👋
 
@@ -8,14 +8,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge ⚔️
 
-    My challenge is to build out this interactive rating component and get it looking as close to the design as possible.
-
-    My users should be able to:
-
-    - View the optimal layout for the app depending on their device's screen size
-    - See hover states for all interactive elements on the page
-    - Select and submit a number rating
-    - See the "Thank you" card state after submitting a rating
+ My challenge is to build out this news website homepage and get it looking as close to the design as possible
 
 
 ## Technologies used 💾
@@ -28,6 +21,6 @@ Thanks for checking out this front-end coding challenge.
 
 
 ## Links
-Project: https://6449a07aa15099043440aa7a--idyllic-belekoy-9ed37d.netlify.app/# <br>
+Project: https://6449a72056d96008ec5d8561--incredible-dusk-c28041.netlify.app/ <br>
 My FrontEnd Mentor Profile:  https://www.frontendmentor.io/profile/TiagoRidev <br>
 Linkedin: https://www.linkedin.com/in/tiagoribeirotech/ <br>
