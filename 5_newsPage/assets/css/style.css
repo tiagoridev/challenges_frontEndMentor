@@ -1,0 +1,326 @@
+/******GENERAL STYLES********/
+*{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;   
+}
+:root{
+    /*Primary colors*/
+    --color-p1: hsl(35, 77%, 62%);
+    --color-p2: hsl(5, 85%, 63%);
+    /*Neutral colors*/
+    --color-n1: hsl(36, 100%, 99%);
+    --color-n2: hsl(233, 8%, 79%);
+    --color-n3: hsl(236, 13%, 42%);
+    --color-n4: hsl(240, 100%, 5%);
+    --color-n5: hsla(240, 100%, 5%, 0.7);
+}
+header, section, main{
+    width:69.38rem;
+}
+/***********************/
+header div{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+header .active{
+    display: none;
+}
+header #logo{
+    width: 4.13rem;
+    height: 2.88rem;
+}
+header #menu{
+    display: flex;
+    gap: 2.5rem;
+    color: var(--color-n3);
+}
+header #btn-menu{
+    display: none;
+}
+header .menu-item{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+header .menu-item:hover{
+    color: var(--color-p2);    
+}
+header nav #menu-mobile{
+    display: none
+}
+section{    
+    margin-top: 3.75rem;    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+section #resume-img{
+    background-image: url('../imgs/image-web-3-desktop.jpg');
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45.63rem;
+    height: 18.75rem;
+    grid-column: 1 / 3;
+}
+section #resume-title{
+    font-size: 3rem;
+    max-width: 8ch;
+    font-weight: 800;
+    grid-row: 2;
+}
+section #resume{
+    grid-column: 2;
+    grid-row: 2;
+    color: var(--color-n3);
+    line-height: 1.5em;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+section #resume-btn{
+    padding: 0.94rem;
+    width: 11.88rem;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: 700;
+    border: none;
+    background-color: var(--color-p2);
+    color: var(--color-n1);    
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+section #resume-btn:hover{
+    background-color: var(--color-n4);
+}
+section #resume-new{
+    background-color: var(--color-n4);
+    grid-row: 1 / 3;
+}
+section #resume-new h2{
+    color: var(--color-p1);
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+    font-size: 2.5rem;
+}
+section #resume-new ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+}
+section #resume-new li:not(:last-child){
+    border-bottom: 1px solid var(--color-n2);    
+}
+section #resume-new li h3{
+    margin-bottom: 1rem;
+    color: var(--color-n1);
+    transition: all .2s ease-in-out;
+}
+section #resume-new li h3:hover{
+    color: var(--color-p1);  
+    cursor: pointer;  
+}
+section li p{
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: var(--color-n2);
+}
+main .post-img{
+    max-width:6.25rem; 
+}
+main ul{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin-top: 3.5rem;
+   gap: 1.13rem;
+}
+main ul li{
+   display: grid;
+   grid-template-columns: auto 1fr;   
+   max-width: 36ch;
+   cursor: pointer;
+}
+main .post-inf{
+    padding: .32rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;   
+}
+main .post-number{
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-n2);
+}
+main .post-title{
+    font-size: .94rem;
+    font-weight: 800;
+    color: var(--color-n4); 
+    transition: all .2s ease-in-out;   
+}
+main .post-title:hover{
+    color: var(--color-p2);
+}
+main .post-txt{
+    font-size: 0.9rem;
+    line-height: 1.7em;
+    color: var(--color-n3);
+}
+footer{
+    padding: 5rem;    
+}
+footer a{
+    transition: all .2s ease-in-out;
+}
+footer a:hover{
+    color: var(--color-p2);
+}
+/*********RESPONSIVE*********/
+/* TABLET RESPONSIVE */
+@media (max-width: 900px){
+    header, section, main{
+        width:45.6rem;        
+    }
+    header, #resume-title, #resume-txt  {
+        margin-top: 2.5rem;
+    }
+    section{    
+        margin-top: 2rem;        
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+    section #resume-new{
+        background-color: var(--color-n4);
+        grid-column: 1 / 3;
+        grid-row: 3;
+        margin-top: 3rem;
+    }
+    main ul{        
+        grid-template-columns: repeat(2, 1fr);        
+     }
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 500px){  
+    header, section, main{
+        width: 22rem;
+    }
+    header div{
+        margin-top: 0rem;
+    }
+    header #menu{
+       display: none;
+    }   
+    header nav #menu-mobile ul{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        color: var(--color-n4);
+    }
+    header nav #menu-mobile ul li{
+        cursor: pointer;
+    }
+    section{    
+        margin-top: 2rem;
+    }
+    section #resume{
+        gap: 1.25rem;
+    }
+    section #resume-img{
+        background-image: url('../imgs/image-web-3-mobile.jpg');
+        display: block;       
+        max-width: 21.86rem;
+        max-height: 18.75rem;
+        grid-column: 1;
+    }
+    section #resume-title{
+        font-size: 3rem;
+        max-width: 8ch;
+        font-weight: 800;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    section #resume{
+        grid-column: 1;
+        grid-row: 3;        
+    }
+    section #resume-txt{
+        grid-column: 1;
+        max-width: 40ch;
+        text-align: left;
+    }
+    section #resume-new{
+        grid-row: 4;
+        max-width: 35ch;
+        grid-column: 1;
+        margin-top: 3.75rem;
+    }
+    main ul{
+        grid-column: 1;
+        grid-template-columns: 1fr;
+     }
+     footer{
+        max-width: 40ch;
+        text-align: center;
+        padding: 3rem;
+     }
+     /************MENU MOBILE**************/
+    header #logo{
+        width: 2.5rem;
+        height: 1.8rem;
+    }
+    header #btn-menu-open{
+        display: block;
+        background: url('../imgs/icon-menu.svg') no-repeat center / cover;
+        width: 2.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        border: none;
+    }
+    header nav #btn-menu-close{
+        display: block;
+        background: url('../imgs/icon-menu-close.svg') no-repeat center / cover;
+        width: 2.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        border: none;
+        position: absolute;
+        top: 60px;
+        left: 200px;
+    } 
+    header nav #menu-mobile{   
+        background-color: var(--color-n1);
+        position: fixed;
+        top: -1.25rem;
+        right: -1.25rem;        
+        height: calc(100vh + 1.25rem);
+        width: 18.75rem; 
+        display: flex;
+        align-items: start;
+        padding: 10rem 0rem 0rem 2rem;
+        transform: translateX(100%);        
+        opacity: 0;        
+        box-shadow: -200px 20px 0px var(--color-n5); 
+        animation: openMenu .2s forwards;       
+    }
+    @keyframes openMenu{
+        to{
+            transform: translateX(0px);
+            opacity: 1;
+        }        
+    }
+    .active{
+        display: none;        
+    }
+}
