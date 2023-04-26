@@ -1,5 +1,7 @@
 # Frontend Mentor - Interactive rating component
 
+![Design preview for Interactive rating component](./assets/img/desktop-preview.jpg)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
@@ -20,14 +22,12 @@ Thanks for checking out this front-end coding challenge.
 
 - HTML;
 - CSS;
-- FLEXBOX;
 - JAVASCRIPT;
-- FIGMA;
 - GIT;
 - VS CODE.
 
 
 ## Links
-Project: https://tiagoridev.github.io/fmentor_challengeproject3/# <br>
+Project: https://6449a07aa15099043440aa7a--idyllic-belekoy-9ed37d.netlify.app/# <br>
 My FrontEnd Mentor Profile:  https://www.frontendmentor.io/profile/TiagoRidev <br>
 Linkedin: https://www.linkedin.com/in/tiagoribeirotech/ <br>
