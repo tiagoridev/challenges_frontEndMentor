@@ -1,6 +1,6 @@
 # Frontend Mentor - Stats preview card component
 
-![Design preview for the Stats preview card component coding challenge](./img/desktop-preview.jpg)
+![Design preview for the Stats preview card component coding challenge](./images/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -12,11 +12,11 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-My challenge is to build out this card component and get it looking as close to the design as possible.
+My challenge is to build out this feature section and get it looking as close to the design as possible.
 
-My users should be able to:
+Your users should:
 
-- View the optimal layout depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 
 <br>
 
@@ -29,6 +29,6 @@ My users should be able to:
 <br>
 
 ## Links
-Project: https://64498aa30a398565212c7bae--rococo-vacherin-81fc47.netlify.app/ <br>
+Project: <br>
 My FrontEnd Mentor Profile:  https://www.frontendmentor.io/profile/TiagoRidev <br>
 Linkedin: https://www.linkedin.com/in/tiagoribeirotech/ <br>
