@@ -1,0 +1,52 @@
+/*global*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --color1--: var(hsl(0, 0%, 98%));
+    --color2--: var(hsl(0, 0%, 41%));
+    --color3--: var(hsl(0, 0%, 8%));
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/***fim global****/
+
+.header{
+    background-color: blue;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    
+}
+
+.header-box{
+    width: 80rem;
+    padding: 40px 0px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto 8fr 1fr;
+    justify-content: end;
+    gap: 60px;
+}
+
+.header ul{
+    display: flex;
+    gap: 30px;
+}
+
+.header-box .login-item{
+    color: pink;
+}
