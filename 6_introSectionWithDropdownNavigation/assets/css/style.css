@@ -11,7 +11,7 @@
 
 :root{
     --color1--: var(hsl(0, 0%, 98%));
-    --color2--: var(hsl(0, 0%, 41%));
+    --color2--: var(hsl(0, 0%, 53%));
     --color3--: var(hsl(0, 0%, 8%));
 }
 
@@ -23,8 +23,7 @@ body{
 
 /***fim global****/
 
-.header{
-    background-color: blue;
+.header{   
     width: 100vw;
     display: flex;
     flex-direction: column;    
@@ -33,9 +32,8 @@ body{
 }
 
 .header-box{
-    width: 80rem;
-    padding: 40px 0px;
-    background-color: aqua;
+    max-width: 80rem;
+    padding: 40px 0px;    
     display: grid;
     grid-template-columns: auto 8fr 1fr;
     justify-content: end;
@@ -47,6 +45,69 @@ body{
     gap: 30px;
 }
 
-.header-box .login-item{
-    color: pink;
+.login-item a{
+    color: var(--color2--);
+}
+
+.btn-register a {
+    color: var(--color2--);    
+    border: 2px solid;
+    border-color: var(--color2--);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+/*main*/
+
+.main-box{
+    max-width: 65rem;
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+    /* background-color: blue; */
+}
+
+.main-title{
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+.main-text{
+    margin-bottom: 40px;
+    color: var(--color2--);
+    max-width: 45ch;
+    line-height: 1.5em;
+}
+
+.main{
+    padding: 60px 0px;
+}
+
+.main-btn{
+    padding: 15px 25px;
+    font-size: 16px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    border: none;
+    border-radius: 15px;
+}
+
+#customers{
+    display: flex;
+    gap: 15px;
+
+}
+/*FALTA INCLUIR IMAGEM*/
+.background{
+    background-image: url('/assets/imgs/image-hero-desktop.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+    padding-left: 20px;
+}
+
+footer{
+    padding: 60px 0px;
 }
