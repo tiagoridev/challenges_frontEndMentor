@@ -32,32 +32,41 @@
     --font2--: 'Fraunces', serif;
 }
 
+.hide{
+    display: none;
+}
+
 /*header*/
 .header-bg{
-    background-color: var(--p6--);
+    /* background-color: var(--p6--); */
+    background: url('../imgs/desktop/image-header.jpg') no-repeat center / cover;
+    height: 100vh;
 }
 .container-header{  
-    max-width: 82.5rem; /*1325px*/
+    max-width: 110rem; /*1325px*/
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     margin: 0 auto;
+    position: relative;    
 }
 .container-menu{
     display: flex;
     align-items: center;
     gap: 40px;
+    
+}
+.icon-hamburger{
+    display: none;
 }
 .header-menu{
     display: flex;
-    gap: 40px;
-    
+    gap: 40px;    
 }
 .header-menu a{
     color: var(--n5--);
-    font-family: var(--font1--);
-    
+    font-family: var(--font1--);    
 }
 .header-menu a:hover{
     text-decoration:underline;
@@ -74,4 +83,72 @@
 .container-menu button:hover{
     background-color: var(--p7--);
     color: var(--n5--);
+}
+
+.header-menu-mobile{
+    padding: 2.5rem 1.25rem;  
+    background-color: var(--n5--);
+    position: absolute;
+    top: 3.75rem;
+    right: 1.25rem;
+    left: 1.25rem;
+    width: auto;
+    height: 20rem;
+    background-color: #19536b; /*será branco*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+}
+.header-menu-mobile ul{    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.header-mobile a{
+    color: var(--n3--);
+    font-family: var(--font1--);
+}
+.header-contact-mobile{
+    background-color: var(--p2--);
+    font-family:var(--font2--);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.section-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-bg img{
+    margin-top: 160px;
+}
+
+.section-bg h1{
+    text-align: center;
+   color: var(--n5--);
+   font-family: var(--font2--);
+   font-size: 5rem;
+   letter-spacing: .2em;
+   margin-top: 110px;
+}
+
+
+/************RESPONSIVE************/
+
+@media (max-width: 700px){
+    .container-menu{
+        display: none;
+    }
+    .icon-hamburger {
+        display: block;
+    }
+
+
 }
