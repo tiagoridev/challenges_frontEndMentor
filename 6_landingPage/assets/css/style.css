@@ -38,9 +38,10 @@
 
 /*header*/
 .header-bg{
-    /* background-color: var(--p6--); */
     background: url('../imgs/desktop/image-header.jpg') no-repeat center / cover;
-    height: 100vh;
+    height: 100vh;    
+    position: relative;
+    
 }
 .container-header{  
     max-width: 110rem; /*1325px*/
@@ -57,9 +58,9 @@
     gap: 40px;
     
 }
-.icon-hamburger{
+/* .icon-hamburger{
     display: none;
-}
+} */
 .header-menu{
     display: flex;
     gap: 40px;    
@@ -83,6 +84,9 @@
 .container-menu button:hover{
     background-color: var(--p7--);
     color: var(--n5--);
+}
+.container-menu-mobile{
+    display: none;
 }
 
 .header-menu-mobile{
@@ -126,12 +130,13 @@
     align-items: center;
 }
 
-.section-bg img{
-    margin-top: 160px;
+.section-bg img{    
+    position: absolute;
+    top: 25rem;
 }
 
 .section-bg h1{
-    text-align: center;
+   text-align: center;
    color: var(--n5--);
    font-family: var(--font2--);
    font-size: 5rem;
@@ -142,13 +147,30 @@
 
 /************RESPONSIVE************/
 
-@media (max-width: 700px){
+@media (max-width: 700px){    
     .container-menu{
         display: none;
     }
-    .icon-hamburger {
+    .container-menu-mobile{
         display: block;
     }
+    .icon-hamburger {
+        display: inline-block;
+    }
+    .header-bg{       
+        background: url('../imgs/mobile/image-header.jpg') no-repeat center / cover;        
+        height: 100vh;
+    }
+    .section-bg h1{
+        font-size: 3rem;
+    }
+    .section-bg img{
+        margin-top: 100px;
+    }
+}
 
-
+@media (max-width: 400px){
+    .section-bg h1{
+        font-size: 2.5rem;
+    }
 }
