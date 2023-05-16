@@ -143,7 +143,31 @@
    letter-spacing: .2em;
    margin-top: 110px;
 }
-
+/*****fim header*****/
+/*****inicio main*****/
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+}
+/*parei aqui*/
+.main-content{
+    max-width: 500px;
+    background-color: var(--n1--);
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.main-title{
+    font-size: 2.8rem;
+    font-family: var(--font2--);
+    font-weight: 900;
+}
+.main-bg{
+    background: url('../imgs/desktop/image-transform.jpg') no-repeat center / cover;
+    height: 590px;
+}
+/*****fim main*****/
 
 /************RESPONSIVE************/
 
