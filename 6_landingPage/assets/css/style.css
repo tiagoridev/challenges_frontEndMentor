@@ -21,6 +21,7 @@
     --p5--: #458c7e;
     --p6--: #3CBDFF;
     --p7--: #6ED0FF;
+    --p8--: #f3e38afd;
     /*neutral color*/
     --n1--: #23303e;
     --n2--: #5a636c;
@@ -123,7 +124,6 @@
     transition: .2s;
     cursor: pointer;
 }
-
 .section-bg{
     display: flex;
     flex-direction: column;
@@ -147,31 +147,63 @@
 /*****inicio main*****/
 .main-container{
     display: grid;
-    grid-template-columns: repeat(2, 6fr);
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: var(--n1--); */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 /*parei aqui*/
 .main-content{
-    max-width: 500px;
-    background-color: var(--n1--);
-    padding: 160px;
+    max-width: auto;
+    padding: 6.25rem 3.13rem 0px 11.25rem;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
+    align-self: center;
 }
 .main-title{
-    font-size: 2.8rem;
+    width: 15ch;
+    font-size: 3rem;
     font-family: var(--font2--);
-    font-weight: 900;
+    font-weight: 900;    
 }
-.main-bg{
-    background: url('../imgs/desktop/image-transform.jpg') no-repeat center / cover;
-    height: 590px;
+.main-text{
+    font-size: 1.25rem;
+    max-width: 44ch;
+    font-family: var(--font1--);
+    color: var(--n2--);
+    line-height: 1.8em;
+}
+.main-container button{
+    max-width:11ch;
+    background-color: transparent;
+    border: none;
+    font-family: var(--font2--);
+    font-size: 1.2rem;
+    cursor: pointer;    
+}
+.main-container button::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;    
+    background-color: var(--p8--);
+    border-radius: 20px;
+    transition: .2s;
+    top: 15px;   
+}
+.main-container button:hover::after{
+    background-color: var(--p2--);
+    
+}
+.main-bg img{
+    width: 100%;
 }
 /*****fim main*****/
 
 /************RESPONSIVE************/
 
-@media (max-width: 700px){    
+@media (max-width: 700px){
     .container-menu{
         display: none;
     }
@@ -181,8 +213,8 @@
     .icon-hamburger {
         display: inline-block;
     }
-    .header-bg{       
-        background: url('../imgs/mobile/image-header.jpg') no-repeat center / cover;        
+    .header-bg{
+        background: url('../imgs/mobile/image-header.jpg') no-repeat center / cover;
         height: 100vh;
     }
     .section-bg h1{
